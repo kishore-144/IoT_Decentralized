@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agricultural Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e0ffe0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: #228B22;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #228B22;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #dff0d8;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+                width: 95%;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Agricultural Website</h1>
+        <p>Welcome to your locally hosted site for modern farming and innovation.</p>
+
+        {% if soil_data %}
+        <table>
+            <tr>
+                <th>Moisture Value</th>
+                <th>Timestamp</th>
+            </tr>
+            {% for entry in soil_data %}
+            <tr>
+                <td>{{ entry.moisture }}</td>
+                <td>{{ entry.timestamp }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No data available yet.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
