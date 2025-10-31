@@ -84,7 +84,7 @@ Based on the real-world smart irrigation model:
 ---
 
 <p align="center">
-  <img src="https://unsplash.com/photos/green-plant-on-brown-soil-DUPFowqI6oI" alt="System Architecture" width="600"/>
+  <img src="./istockphoto-1326948783-612x612.jpg" alt="System Architecture" width="600"/>
 </p>
 
 > **Ready to make your farm smart, resilient, and truly yours? Fork & contribute!**
@@ -101,4 +101,4 @@ Based on the real-world smart irrigation model:
 
 #### 
 
-> *For more, see `/docs/Project-Report.docx` and `/final VIVA/Final-VIVA-PPT.pptx` in this repo!*
+> *For more, see `/Final VIVA/Project-Report.docx` and `/Final VIVA/Final-VIVA-PPT.pptx` in this repo!*
